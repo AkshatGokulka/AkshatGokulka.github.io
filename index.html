@@ -1,131 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Cookie&family=Courgette&family=Marcellus+SC&family=Reem+Kufi&family=Sacramento&family=Satisfy&family=Suez+One&display=swap');
+      </style>
+<style>
+body{
+  background-color: #edede8;
+}
+ .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .image{
+    width:300px;
+    height: 300px;
+  }
+  .carousel-item{
+    height:auto;
+  }
+  #page_header{
+    background-image:
+  }
+  .heading{
+    font-family: Marcellus SC ,san-serif;
+    font-size: 44px;
+    font-weight: 350;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  #logo{
+    height: 80px;
+  }
+  .w3-bar{
+    height: 70px;
+    background-color: #edede8;
+  }
+ .details{
+   padding: 10px;
+   margin-bottom: 5px;
+ }
+ .mySlides {display:none;}
+ .btn1{
+   width: 225px;
+   height: 225px;
+   border: solid 1px black;
+   background-color:white;
+   margin: 16px;
+ }
+.mydiv{
+  font-size: x-large;
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: bold;
+}
+.btn2{
+  width:250px;
+  height: 250px;
+  background-color: #dbd9d9;
+  margin:13px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.btn2:hover {
+ background-color: #dbd9d9;
+}
 
-</head>
-<body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Services</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">About Us</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Contact</a>
-    </li>
-  </ul>
-</nav>
-<br>
-<div class="container" id="page_header">
+ .btn1:hover {
+  background-color: #757574;
+ }
+.w3-button{
+  font-size: x-large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.slider-area{
+  background: #757574;
+  padding:50px 0;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.img-area{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border:2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.carousel-caption{
+  position: static;
+  padding-bottom: 15px;
+  padding-top: 0;
+}
+.carousel-caption h5{
+  font-family: satisfy,sans-serif;
+  font-size: 26px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+.carousel-caption p{
+  font-family: courgette,sans-serif;
+  font-size: 18px;
+  margin: auto;
+  width: 70%;
+  margin-bottom: 10px;
+}
+.carousel-indicators{
+  bottom: -35px;
+}
+#about{
+  margin-left: 40px;
+}
+.sub_heading{
+  font-size: 34px;
+font-family: 'Reem Kufi', sans-serif;
+}
+.details{
+  font-size: 28px;
+  font-family: 'Cookie', cursive;
+}
+#team{
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+}
+.Form{
+  font-size: 20px;
+  font-family: 'Boogaloo', cursive;
+}
+.w3-bar-item{
+  font-size: 30px;
+  font-family: 'Boogaloo', cursive;
+}
+.heading h1{
+  font-size: 50px;
+  font-family: 'Boogaloo', cursive;
+}
+#contact{
+  background-color:#edede8 ;
+}
+</style>
+  </head>
+  <body>
+      <div class="w3-bar w3-light-grey w3-top">
+        <a href="index.html" class="w3-bar-item w3-button" >Home</a>
+        <a href="#residential_project" class="w3-bar-item w3-button" >Projects</a>
+        <a href="#services" class="w3-bar-item w3-button" >Services</a>
+        <a href="#aboutinfo" class="w3-bar-item w3-button" >About Us</a>
+        <a href="#contact" class="w3-bar-item w3-button" >Contact</a>
+      </div>
+    </div>
+<br><br><br><br>
+  <div class="container" id="page_header">
     <div class="page-header text-center heading">
       <a id="logo" href="#" ><img src="logo1.jpg" height="160"></a>
       <br>
       <h1>THE INNSIDE STORY</h1>
     </div>
   </div>
+  <div id="demo" class="carousel slide" data-ride="carousel">
 
-<div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
 
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img7.jpg" style="width:100%;height:500px;margin-top:10px;" >
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img11.jpg" alt="Los Angeles">
+      </div>
+      <div class="carousel-item">
+        <img src="img12.jpg" alt="Chicago">
+      </div>
+      <div class="carousel-item">
+        <img src="img3.jpeg" alt="New York">
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="img8.jpg" style="width:100%; height:500px;margin-top:10px;" >
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <br>
+  <div class="w3-container" id="residential_project">
+    <div class="heading" class="text-center" >
+    Residential Projects
     </div>
-    <div class="carousel-item">
-      <img src="img9.jpg" style="width:100%; height:500px;margin-top:10px;" >
+       <!-- Photo grid (modal) -->
+  <div class="w3-row-padding" >
+    <div class="w3-half">
+      <img src="new1.JPEG" style="width:100%;margin-bottom: 5px; " onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="new2.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="new6.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="new9.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="new4.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="new5.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="new7.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="Scandinavian design">
+      <img src="new10.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="Scandinavian design">
+      <img src="new11.JPEG" style="width:100%;margin-bottom: 5px; height: 610px;" onclick="onClick(this)" alt="Scandinavian design">
     </div>
   </div>
-
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-
-</div>
+   <!-- Modal for full size images on click-->
+   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  </div>
 <br>
 
-<div class="container">
-   <!-- Control the column width, and how they should appear on different devices -->
-   <div class="row">
-     <div class="col-sm-6" >
-       <img src="new1.JPEG" style="width:100%;margin-bottom: 5px;height:auto; " style="width:30%;cursor:zoom-in"
-  onclick="document.getElementById('modal01').style.display='block'" >
-  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-  <div class="w3-modal-content w3-animate-zoom">
-    <img src="new1.JPEG" style="width:100% ">
+<div class="w3-container" id="commercial_project">
+  <div class="heading" class="text-center" >
+  Commercial Projects
   </div>
-</div>
-
-     </div>
-     <div class="col-sm-6" >
-       <img src="new4.JPEG" style="width:100%;margin-bottom: 5px;height:auto;" style="width:30%;cursor:zoom-in"
-  onclick="document.getElementById('modal02').style.display='block'" >
-  <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
-  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-  <div class="w3-modal-content w3-animate-zoom">
-    <img src="new4.JPEG" style="width:100%">
+<div class="w3-row-padding" >
+  <div class="w3-half">
+    <img src="comm3.JPEG" style="width:100%;margin-bottom: 5px;"  onclick="onClick(this)" >
+    <img src="comm4.JPEG" style="width:100%;margin-bottom: 5px;"  onclick="onClick(this)" >
   </div>
-</div>
-
-       <img src="new5.JPEG" style="width:100%;margin-bottom: 5px;height:auto;" style="width:30%;cursor:zoom-in"
-  onclick="document.getElementById('modal01').style.display='block'" >
-      </div>
-     </div>
-     <div class="row">
-      <div class="col-sm-6" >
-        <img src="new2.JPEG" style="width:100%;margin-bottom: 5px; height:auto;" onclick="onClick(this)">
-      </div>
-   <div class="col-sm-6" >
-     <img src="new6.JPEG" style="width:100%;margin-bottom: 5px; height:auto;" onclick="onClick(this)">
+   <div class="w3-half">
+    <img src="comm2.JPEG" style="width:100%;margin-bottom: 5px;"  onclick="onClick(this)" >
+    <img src="comm1.JPEG" style="width:100%;margin-bottom: 5px;"  onclick="onClick(this)" >
    </div>
+  </div>
+  </div>
+</div>
+
+<div class="w3-container " id="services">
+  <div class="heading text-center">Services Provided By Us</div>
+  <div class="w3-row">
+    <div class="w3-col w3-container" style="width:05%"></div>
+    <div class="w3-col w3-container" style="width:95%">
+        <button type="button" class="btn2 "><div class="mydiv">Contracting & Freelancing</div>
+        </button>
+
+          <button type="button" class="btn2  "><div class="mydiv">Paid Consulting</div>
+        </button>
+
+        <button type="button" class="btn2  "><div class="mydiv ">Vaastu Consulting</div>
+      </button>
+
+        <button type="button" class="btn2  "><div class="mydiv">Space Planning</div>
+      </button>
+</div>
+</div>
+<div class="w3-row">
+  <div class="w3-col w3-container" style="width:05%"></div>
+  <div class="w3-col w3-container" style="width:95%">
+        <button type="button" class="btn2 "><div class="mydiv">Renovation</div>
+      </button>
+
+        <button type="button" class="btn2 "><div class="mydiv">Interior Styling</div>
+        </button>
+
+          <button type="button" class="btn2 "><div class="mydiv">Snagging</div>
+          </button>
+
+            <button type="button" class="btn2 "><div class="mydiv">Landscaping For Private Space</div>
+            </button>
     </div>
-    <div class="row">
-   <div class="col-sm-6" >
-     <img src="new7.JPEG" style="width:100%;margin-bottom: 5px;height:auto;" onclick="onClick(this)" alt="Windows for the atrium">
+</div>
+</div>
+
+
+  <div class="container"  id="aboutinfo">
+    <div class="heading" >About Us</div>
+    <br>
+    <div class="w3-threequarter s9 w3-center w3-opacity-min w3-hover-opacity-off w3-mobile " >
+    The Innside Story is an Interior Design Company founded by Versha Gokulka in 2016.
+    Their design philosophy is finding simplicity in clutter and to create in order to inspire.
+    <br>
+  The Innside Story’s goal is for its designs to have the power to transport you into another world,
+  allow you to dream and most importantly, evoke an emotional response.
+  <br>
+  WE are happy to work on projects of any size from an individual room to a major re-development,
+   from demolition & structural alterations and extensions to final decorations and furnishing.
+   Our talented architectural and design team can transform any property into a beautiful space through architectural and interior design.
+   From the minimalistic,
+    luxurious and contemporary to the classic contemporary.
+    Our TEAM transforms any new build or renovation into an award winning design for any taste.
     </div>
-    <div class="col-sm-6" >
-      <img src="new9.JPEG" style="width:100%;margin-bottom: 5px;height:auto; " onclick="onClick(this)">
+    <div class="w3-quarter ">
+      <img id="about" src="about.jpg" height="400px" width="250px">
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<div class="w3-container">
+  <div class="heading" id="benefits">
+    Additional Benefits
+  </div>
+  <div class="w3-row">
+    <div class="w3-col s12">
+        <button type="button" class="btn1 "><div class="mydiv">Vaastu</div>
+        </button>
+
+          <button type="button" class="btn1  "><div class="mydiv">Fast Work Execution</div>
+        </button>
+
+        <button type="button" class="btn1  "><div class="mydiv ">On time Delivery</div>
+      </button>
+
+        <button type="button" class="btn1  "><div class="mydiv">Customised Work</div>
+      </button>
+
+        <button type="button" class="btn1 "><div class="mydiv">Budget Friendly</div>
+      </button>
+    </div>
+</div>
+</div>
+<div class="heading ">Testimonials</div>
+<div class="slider-area">
+  <div class="w3-container" id="testimonials">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3" class="active"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img-area">
+          <img src="testimonial.jpg">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mrs.Shweta Agarwal</h5>
+            <h6>Homemaker</h6>
+            <p>Versha has always been easy to work with and can adapt her services to
+              many different design styles. Her communication,collaboration and design expertise made the entire
+              process run smoothly.We will continue to utilize and recommend her for all future
+              interior design projects.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img-area">
+            <img src="testimonial.jpg">
+            </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mrs.Bharti Jain</h5>
+            <h6>Homemaker</h6>
+            <p>We are glad to have found you , You made our house exactly like we thought of.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img-area">
+            <img src="testimonial.jpg">
+            </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mr.Purushottam Agarwal</h5>
+            <h6>CEO- Pragati Edible Pvt Ltd.</h6>
+            <p>Very dedicated and hardworking with exceptional teamwork</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img-area">
+            <img src="testimonial.jpg">
+            </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mrs.Meenu Agarwal</h5>
+            <h6>CEO- FoodnWellness</h6>
+            <p>Versha renovated my apartment in city high kolkata. She did amazing work. She took complete
+              responsibility of the work,esign and selection of materials.Always consulte and discussed during the process.Handled all the complications
+              of labour/ building complications and delivered a fantastic output. Would recommend her to anybody for work.Important that
+              we give independence to work but also take decisions during the journey so that it gets done to mutual satisfaction.
+               She has a good sense of aesthetics and will match colors and design
+              to give a soft and unstated elegance to the overall decor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+<div class="w3-container" id="contact">
+ <div class="heading"> Contact Us </div>
+ <div class="w3-col s6 w3-center">
+    <br>
+  <div class="sub_heading">
+    Contact Information
+    </div>
+    <div class="details">
+    <div id="team">  Team: The Innside story</div>
+      1,British India Street
+      Kolkata-700069
+      <br>
+      Phone:+91 8420602455
+      <br>
+      E-mail: vershag18@gmail.com
+      <br>
+      You can also follow us on
+      <a class="glyphicons" href="https://www.instagram.com/_theinnsidestory/"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+      <a class="glyphicons" href="https://www.facebook.com/theinnsidestoryy/"><i class="fa fa-facebook-official" style="font-size:24px"></i></a>
+      <a class="glyphicons" href="#"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+      <br>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-6" >
-      <img src="new10.JPEG" style="width:100%;margin-bottom: 5px;height:auto;" onclick="onClick(this)" alt="Windows for the atrium">
-    </div>
-    <div class="col-sm-6">
-      <img src="new11.JPEG" style="width:100%;" onclick="onClick(this)" alt="Windows for the atrium">
-     </div>
-     </div>
- </div>
-
-
-</body>
+  <div class="w3-col s6 ">
+    <form action="mailer.php" method="POST">
+      <div class="form-group">
+        <label for="name" class="Form">Name:</label>
+        <input type="text" class="form-control" placeholder="Enter Name" id="name"  name="name"required>
+      </div>
+      <div class="form-group">
+        <label for="email" class="Form">Email address:</label>
+        <input type="email" class="form-control" placeholder="Enter email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="Form" action="connect.php">Phone No:</label>
+        <input type="number" class="form-control" placeholder="Enter phone number" id="phone" name="phone"required>
+      </div>
+      <div class="form-group">
+        <label for="query" class="Form">Query:</label>
+        <textarea type="text" class="form-control" placeholder="Please write here" id="query" name="query"></textarea>
+        </div>
+      <button type="submit" class="btn btn-primary Form" name="submit">Submit</button>
+    </form>
+  </div>
+  </div>
+<script>
+  // Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display="initial";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+  </body>
 </html>
