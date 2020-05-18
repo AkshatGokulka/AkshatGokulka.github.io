@@ -76,44 +76,56 @@
    <!-- Control the column width, and how they should appear on different devices -->
    <div class="row">
      <div class="col-sm-6" >
-       <img src="new1.JPEG" style="width:100%;margin-bottom: 5px; " onclick="onClick(this)">
-     </div>
-     <div class="col-sm-6" >
-       <img src="new4.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="Windows for the atrium">
-      </div>
-   </div>
-   <div class="row">
-     <div class="col-sm-6" >
-       <img src="new2.JPEG" style="width:100%;margin-bottom: 5px; " onclick="onClick(this)">
-     </div>
-     <div class="col-sm-6" >
-       <img src="new5.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="Windows for the atrium">
-      </div>
-   </div>
-   <div class="row">
-     <div class="col-sm-6" >
-       <img src="new6.JPEG" style="width:100%;margin-bottom: 5px; " onclick="onClick(this)">
-     </div>
-     <div class="col-sm-6" >
-       <img src="new7.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="Windows for the atrium">
-      </div>
-   </div>
-   <div class="row">
-     <div class="col-sm-6" >
-       <img src="new9.JPEG" style="width:100%;margin-bottom: 5px; " onclick="onClick(this)">
-     </div>
-     <div class="col-sm-6" >
-       <img src="new10.JPEG" style="width:100%;margin-bottom: 5px;" onclick="onClick(this)" alt="Windows for the atrium">
-      </div>
-   </div>
-    <div class="row">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6" >
-        <img src="new11.JPEG" style="width:100%;" onclick="onClick(this)" alt="Windows for the atrium">
-       </div>
-    </div>
+       <img src="new1.JPEG" style="width:100%;margin-bottom: 5px;height:auto; " style="width:30%;cursor:zoom-in"
+  onclick="document.getElementById('modal01').style.display='block'" >
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="new1.JPEG" style="width:100% ">
+  </div>
+</div>
 
+     </div>
+     <div class="col-sm-6" >
+       <img src="new4.JPEG" style="width:100%;margin-bottom: 5px;height:auto;" style="width:30%;cursor:zoom-in"
+  onclick="document.getElementById('modal02').style.display='block'" >
+  <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="new4.JPEG" style="width:100%">
+  </div>
+</div>
+
+       <img src="new5.JPEG" style="width:100%;margin-bottom: 5px;height:auto;" style="width:30%;cursor:zoom-in"
+  onclick="document.getElementById('modal01').style.display='block'" >
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6" >
+        <img src="new2.JPEG" style="width:100%;margin-bottom: 5px; height:auto;" onclick="onClick(this)">
+      </div>
+   <div class="col-sm-6" >
+     <img src="new6.JPEG" style="width:100%;margin-bottom: 5px; height:auto;" onclick="onClick(this)">
+   </div>
+    </div>
+    <div class="row">
+   <div class="col-sm-6" >
+     <img src="new7.JPEG" style="width:100%;margin-bottom: 5px;height:auto;" onclick="onClick(this)" alt="Windows for the atrium">
+    </div>
+    <div class="col-sm-6" >
+      <img src="new9.JPEG" style="width:100%;margin-bottom: 5px;height:auto; " onclick="onClick(this)">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6" >
+      <img src="new10.JPEG" style="width:100%;margin-bottom: 5px;height:auto;" onclick="onClick(this)" alt="Windows for the atrium">
+    </div>
+    <div class="col-sm-6">
+      <img src="new11.JPEG" style="width:100%;" onclick="onClick(this)" alt="Windows for the atrium">
+     </div>
+     </div>
  </div>
+
 
 </body>
 </html>
