@@ -158,14 +158,13 @@ font-family: 'Reem Kufi', sans-serif;
 </style>
   </head>
   <body>
-      <div class="w3-bar w3-light-grey w3-top">
-        <a href="index.html" class="w3-bar-item w3-button" >Home</a>
-        <a href="#residential_project" class="w3-bar-item w3-button" >Projects</a>
-        <a href="#services" class="w3-bar-item w3-button" >Services</a>
-        <a href="#aboutinfo" class="w3-bar-item w3-button" >About Us</a>
-        <a href="#contact" class="w3-bar-item w3-button" >Contact</a>
+      <div class="w3-bar w3-light-grey w3-top ">
+        <a href="index.html" class="w3-bar-item w3-button " >Home</a>
+        <a href="#residential_project" class="w3-bar-item w3-button " >Projects</a>
+        <a href="#services" class="w3-bar-item w3-button " >Services</a>
+        <a href="#aboutinfo" class="w3-bar-item w3-button " >About Us</a>
+        <a href="#contact" class="w3-bar-item w3-button " >Contact</a>
       </div>
-    </div>
 <br><br><br><br>
   <div class="container" id="page_header">
     <div class="page-header text-center heading">
@@ -314,7 +313,7 @@ font-family: 'Reem Kufi', sans-serif;
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
-<div class="w3-container">
+<div class="w3-container w3-mobile">
   <div class="heading" id="benefits">
     Additional Benefits
   </div>
@@ -337,7 +336,7 @@ font-family: 'Reem Kufi', sans-serif;
     </div>
 </div>
 </div>
-<div class="heading ">Testimonials</div>
+<div class="heading w3-mobile">Testimonials</div>
 <div class="slider-area">
   <div class="w3-container" id="testimonials">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -347,8 +346,8 @@ font-family: 'Reem Kufi', sans-serif;
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="3" class="active"></li>
       </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+      <div class="carousel-inner w3-mobile">
+        <div class="carousel-item ">
           <div class="img-area">
           <img src="testimonial.jpg">
           </div>
@@ -382,7 +381,7 @@ font-family: 'Reem Kufi', sans-serif;
             <p>Very dedicated and hardworking with exceptional teamwork</p>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item active">
           <div class="img-area">
             <img src="testimonial.jpg">
             </div>
@@ -413,7 +412,8 @@ font-family: 'Reem Kufi', sans-serif;
 </div>
 <div class="w3-container" id="contact">
  <div class="heading"> Contact Us </div>
- <div class="w3-col s6 w3-center">
+ <div class="w3-row">
+ <div class="w3-half w3-center">
     <br>
   <div class="sub_heading">
     Contact Information
@@ -434,7 +434,7 @@ font-family: 'Reem Kufi', sans-serif;
       <br>
     </div>
   </div>
-  <div class="w3-col s6 ">
+  <div class="w3-half">
     <form action="mailer.php" method="POST">
       <div class="form-group">
         <label for="name" class="Form">Name:</label>
@@ -456,6 +456,7 @@ font-family: 'Reem Kufi', sans-serif;
     </form>
   </div>
   </div>
+</div>
 <script>
   // Modal Image Gallery
 function onClick(element) {
