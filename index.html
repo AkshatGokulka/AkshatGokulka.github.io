@@ -157,8 +157,8 @@ font-family: 'Reem Kufi', sans-serif;
 }
 </style>
   </head>
-  <body>
-      <div class="w3-bar w3-light-grey w3-top ">
+  <body data-spy="scroll" data-target="#myscrollspy" data-offset="50">
+      <div class="w3-bar w3-light-grey w3-top " id="myscrollspy">
         <a href="index.html" class="w3-bar-item w3-button " >Home</a>
         <a href="#residential_project" class="w3-bar-item w3-button " >Projects</a>
         <a href="#services" class="w3-bar-item w3-button " >Services</a>
@@ -293,7 +293,7 @@ font-family: 'Reem Kufi', sans-serif;
   <div class="container"  id="aboutinfo">
     <div class="heading" >About Us</div>
     <br>
-    <div class="w3-threequarter s9 w3-center w3-opacity-min w3-hover-opacity-off w3-mobile " >
+    <div class="w3-threequarter s9 w3-center w3-mobile " >
     The Innside Story is an Interior Design Company founded by Versha Gokulka in 2017.
     Their design philosophy is finding simplicity in clutter and to create in order to inspire.
     <br>
@@ -315,7 +315,7 @@ font-family: 'Reem Kufi', sans-serif;
     <br>
     </div>
     <div class="w3-quarter ">
-      <img id="about" src="about.jpg" height="450px" width="300px" class="w3-round">
+      <img id="about" src="about.jpg" height="450px"style="width:100%;max-width:300px;" class="w3-round">
     </div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -343,9 +343,9 @@ font-family: 'Reem Kufi', sans-serif;
     </div>
 </div>
 </div>
+<div class="w3-container" id="testimonials">
 <div class="heading w3-mobile">Testimonials</div>
 <div class="slider-area">
-  <div class="w3-container" id="testimonials">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" ></li>
@@ -358,7 +358,7 @@ font-family: 'Reem Kufi', sans-serif;
           <div class="img-area">
           <img src="testimonial.jpg">
           </div>
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-md-block w3-mobile">
             <h5>Mrs.Shweta Agarwal</h5>
             <h6>Homemaker</h6>
             <p>Versha has always been easy to work with and can adapt her services to
